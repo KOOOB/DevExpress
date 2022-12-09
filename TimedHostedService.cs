@@ -7,6 +7,8 @@ using System.Text;
 
 namespace KOB.Services
 {
+    // builder.Services.AddHostedService<TimedHostedService>();
+    // TimedHostedService.ConnectionString = builder.Configuration.GetSection("connectionStrings:DashboardConnectionString").Value;
     public class TimedHostedService : IHostedService, IDisposable
     {
         public static string? ConnectionString { get; set; }
